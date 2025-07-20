@@ -2,6 +2,7 @@
   <div class="card">
     <h2>{{ name }}</h2>
     <p>Szint: {{ level }}</p>
+    <p>Reset: {{ reset }}</p>
   </div>
 </template>
 
@@ -10,7 +11,8 @@ export default {
   name: 'CharacterCard',
   props: {
     name: String,
-    level: Number
+    level: Number,
+    reset: Number
   }
 }
 </script>

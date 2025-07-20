@@ -1,5 +1,8 @@
 <template>
-  <CharacterCard name="DarkKnight" :level="100" />
+  <CharacterCard name="DarkKnight" :level="100" :reset="5" />
+  <CharacterCard name="FairyElf" :level="100" :reset="5" />
+  <CharacterCard name="SoulMaster" :level="100" :reset="5" />
+  <CharacterCard name="MagicGladiator" :level="100" :reset="5" />
 </template>
 
 <script setup>
