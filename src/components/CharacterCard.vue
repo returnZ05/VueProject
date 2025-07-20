@@ -1,13 +1,22 @@
 <template>
-  <CharacterCard name="DarkKnight" :level="100" />
+  <div class="card">
+    <h2>{{ name }}</h2>
+    <p>Szint: {{ level }}</p>
+  </div>
 </template>
 
-<script setup>
-import CharacterCard from './components/CharacterCard.vue'
+<script>
+export default {
+  name: 'CharacterCard',
+  props: {
+    name: String,
+    level: Number
+  }
+}
 </script>
 
 <style scoped>
-.character-card {
+.card {
   color: #00ffcc;
   font-family: Arial, sans-serif;
   padding: 1rem;
